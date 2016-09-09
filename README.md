@@ -5,4 +5,4 @@
 
 ## 在线DEMO
 
-https://ideatry.github.io/page-boy/page-boy.html
+https://ideatry.github.io/page-boy/
