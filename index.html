@@ -12,7 +12,7 @@
   <meta name="author" content="" />
   <title>page boy</title>
   <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/page-boy.css" />
+  <link rel="stylesheet" href="css/index.css" />
   <!--[if lt IE 9]>
   <script src="js/vendor/html5shiv.min.js"></script>
   <script src="js/vendor/respond.min.js"></script>
@@ -20,21 +20,17 @@
 </head>
 
 <body>
-  <div>
-    <svg viewBox="0 0 800 600">
-      <symbol id="s-text">
-        <text text-anchor="middle" x="50%" y="35%" class="text--line">I am</text>
-        <text text-anchor="middle" x="50%" y="68%" class="text--line2">Page Boy</text>
-      </symbol>
-
-      <g class="g-ants">
-        <use xlink:href="#s-text" class="text-copy"></use>
-        <use xlink:href="#s-text" class="text-copy"></use>
-        <use xlink:href="#s-text" class="text-copy"></use>
-        <use xlink:href="#s-text" class="text-copy"></use>
-        <use xlink:href="#s-text" class="text-copy"></use>
-      </g>
-    </svg>
+  <div class="moon-star">
+    <div class="moon">
+      <div class="moon1"></div>
+      <div class="moon2"></div>
+      <div class="moon3"></div>
+      <div class="moon4"></div>
+    </div>
+    <div class="stars"></div>
   </div>
+
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/star.js"></script>
 </body>
 </html>
