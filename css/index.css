@@ -28,6 +28,19 @@ body {
   background: #333;
   overflow: hidden;
   z-index: 2;
+  animation: moon-light 3s infinite ease-out;
+}
+
+@-webkit-keyframes moon-light {
+  0% {
+    box-shadow: 0 0 20px #ffc;
+  }
+  50% {
+    box-shadow: 0 0 10px #fff;
+  }
+  100% {
+    box-shadow: 0 0 20px #ffc;
+  }
 }
 
 .moon1,

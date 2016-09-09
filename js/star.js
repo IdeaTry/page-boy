@@ -1,14 +1,14 @@
 $(function() {
   var star = $('.stars');
   function stars() {
-    for (var i = 0; i < 5; i++) {
-      var j = parseInt(Math.random() * 1600 + 000);
-      var j1 = parseInt(Math.random() * 300 + 300);
-      var j2 = parseInt(Math.random() * 300 + 1200);
+    for (var i = 0; i < 7; i++) {
+      var o = parseInt(Math.random() * 1600 + 100);
+      var p = parseInt(Math.random() * 600 + 900);
+      var q = parseInt(Math.random() * 600 + 1500);
       var n = parseInt(Math.random() * 10 + (-10));
       star.prepend('<div class="star"></div>')
-      star.children('div').eq(0).css({'left': j, 'top': n})
-      star.children('div').eq(0).animate({'left': j - j1, 'top': $(window).height() + 120}, j2)
+      star.children('div').eq(0).css({'left': o, 'top': n})
+      star.children('div').eq(0).animate({'left': o - p, 'top': $(window).height() + 100}, q)
     }
   }
 
@@ -17,8 +17,8 @@ $(function() {
     stars();
   }, 500);
   setInterval(function() {
-    for (var jj = 0; jj < $('.stars > div').size() / 5; jj++) {
-      $('.stars > div').eq($('.stars > div').size() - jj).remove();
+    for (var j = 0; j < $('.stars > div').size() / 7; j++) {
+      $('.stars > div').eq($('.stars > div').size() - j).remove();
     }
   }, 1000)
 });
