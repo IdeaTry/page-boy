@@ -2,7 +2,6 @@ html, body {
   height: 100%; }
 
 body {
-  background: #433;
   background-size: .12em 100%;
   font: 16em/1 Arial; }
 
@@ -23,8 +22,8 @@ svg {
   height: 100%; }
 
 .text-copy {
-  fill: rgba(0, 0, 0, 0.03);
-  stroke: white;
+  fill: rgba(255, 255, 255, 0.01);
+  stroke: #999;
   stroke-dasharray: 7% 28%;
   stroke-width: 3px;
   font-family: times;
