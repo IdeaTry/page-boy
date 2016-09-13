@@ -1,8 +1,11 @@
-.pb-banner{
+.pb-banner {
+  position: relative;
   width: 100%;
   height: 350px;
+  z-index: 1;
 }
-.pb-banner > div{
+
+.pb-banner > div {
   height: 350px;
 }
 

@@ -161,8 +161,8 @@ header, nav, article, section, aside, footer, figure, figcaption {
 
 .moon {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 5px;
+  right: 5px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -223,6 +223,10 @@ header, nav, article, section, aside, footer, figure, figcaption {
   top: 35%;
 }
 
+.stars {
+  z-index: 2;
+}
+
 .star {
   display: inline-block;
   position: relative;
@@ -235,6 +239,7 @@ header, nav, article, section, aside, footer, figure, figcaption {
   box-shadow: 0 0 1px 0 rgba(255, 255, 204, .1);
   transform-origin: 0% 100%;
 }
+
 /*moon and star e*/
 
 .pb-wrap, .pb-menu {

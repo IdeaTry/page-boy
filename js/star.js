@@ -1,5 +1,6 @@
 $(function() {
   var star = $('.stars');
+
   function stars() {
     for (var i = 0; i < 8; i++) {
       var o = parseInt(Math.random() * 1600 + 100);
