@@ -1,10 +1,13 @@
 @charset "utf-8";
 html {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 html,
 body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
   margin: 0;
   font-family: 'microsoft yahei';
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -106,6 +109,10 @@ input::-ms-clear {
   font-size: 12px;
 }
 
+.f16 {
+  font-size: 16px;
+}
+
 .tl {
   text-align: left;
 }
@@ -172,13 +179,13 @@ header, nav, article, section, aside, footer, figure, figcaption {
 
 @-webkit-keyframes moon-light {
   0% {
-    box-shadow: 0 0 20px #ffc;
+    box-shadow: 0 0 20px #c7f2ff;
   }
   50% {
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #3fa1e6;
   }
   100% {
-    box-shadow: 0 0 20px #ffc;
+    box-shadow: 0 0 20px #c7f2ff;
   }
 }
 
@@ -226,7 +233,7 @@ header, nav, article, section, aside, footer, figure, figcaption {
   top: 10%;
   left: 20%;
   border: 0px solid #ffc;
-  border-width: 0px 90px 2px 90px;
+  border-width: 0px 90px 3px 90px;
   border-color: transparent transparent transparent rgba(255, 255, 204, .5);
   transform: rotate(-45deg) translate3d(1px, 3px, 0);
   box-shadow: 0 0 1px 0 rgba(255, 255, 204, .1);

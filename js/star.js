@@ -1,7 +1,7 @@
 $(function() {
   var star = $('.stars');
   function stars() {
-    for (var i = 0; i < 7; i++) {
+    for (var i = 0; i < 8; i++) {
       var o = parseInt(Math.random() * 1600 + 100);
       var p = parseInt(Math.random() * 600 + 900);
       var q = parseInt(Math.random() * 600 + 1500);
@@ -17,7 +17,7 @@ $(function() {
     stars();
   }, 500);
   setInterval(function() {
-    for (var j = 0; j < $('.stars > div').size() / 7; j++) {
+    for (var j = 0; j < $('.stars > div').size() / 8; j++) {
       $('.stars > div').eq($('.stars > div').size() - j).remove();
     }
   }, 1000)
