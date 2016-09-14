@@ -9,21 +9,17 @@
 #photos {
   position: absolute;
   z-index: 9;
-  width: calc(50% * 2);
-}
-
-#photos img {
-  position: absolute;
-  top: -180px;
   width: 100%;
 }
 
-.banner-img1 {
-  left: 0;
+#photos > div {
+  width: 200%;
 }
 
-.banner-img2 {
-  left: 1920px;
+#photos img {
+  float: left;
+  width: 50%;
+  height: 350px;
 }
 
 .play {
@@ -43,36 +39,25 @@
   position: absolute;
   left: 50%;
   bottom: 10px;
-  width: 80px;
-  height: 10px;
-  margin-left: -40px;
-  z-index: 10;
-}
-
-.num a {
-  float: left;
-  display: block;
   width: 20px;
-  height: 10px;
+  height: 5px;
+  margin-left: -25px;
+  z-index: 10;
+  opacity: .5;
   background: #fff;
   cursor: pointer;
-  opacity: 0.5;
 }
 
-.num a:hover {
+#a2 {
+  margin-left: 0;
+}
+
+.num:hover {
   opacity: 1;
 }
 
-.num a:first-child {
-  margin-right: 10px;
-}
-
-.num a:hover, #photos:hover {
+.num:hover, #photos:hover {
   animation-play-state: paused;
-}
-
-.num a:nth-child(2) {
-  margin-right: 30px;
 }
 
 #a1:hover ~ #photos {
@@ -85,22 +70,19 @@
 
 @keyframes ma1 {
   0% {
-    position: absolute;
-    left: -3840px;
+    margin-left: -100%;
   }
   100% {
-    position: absolute;
-    left: 0;
+    margin-left: 0;
   }
 }
 
 @keyframes ma2 {
   0% {
-    position: absolute;
-    left: -3840px;
+    margin-left: -200%;
   }
   100% {
-    left: -1920px;
+    margin-left: -100%;
   }
 }
 
