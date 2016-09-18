@@ -161,12 +161,12 @@ header, nav, article, section, aside, footer, figure, figcaption {
 
 .moon {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 150px;
-  height: 150px;
+  top: -100px;
+  right: -80px;
+  width: 280px;
+  height: 280px;
+  border: 1px solid #121212;
   border-radius: 50%;
-  box-shadow: 0 0 15px #ffc;
   background: #333;
   overflow: hidden;
   z-index: 1;
@@ -175,13 +175,13 @@ header, nav, article, section, aside, footer, figure, figcaption {
 
 @-webkit-keyframes moon-light {
   0% {
-    box-shadow: 0 0 20px #c7f2ff;
+    box-shadow: 0 0 50px #c7f2ff;
   }
   50% {
-    box-shadow: 0 0 10px #3fa1e6;
+    box-shadow: 0 0 15px #3fa1e6;
   }
   100% {
-    box-shadow: 0 0 20px #c7f2ff;
+    box-shadow: 0 0 50px #c7f2ff;
   }
 }
 
