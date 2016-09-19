@@ -166,11 +166,12 @@ header, nav, article, section, aside, footer, figure, figcaption {
   width: 280px;
   height: 280px;
   border: 1px solid #121212;
-  border-radius: 50%;
+  border-radius: 140px;
   background: #333;
   overflow: hidden;
   z-index: 1;
   animation: moon-light 3s infinite ease-out;
+  -webkit-animation: moon-light 3s infinite ease-out;
 }
 
 @-webkit-keyframes moon-light {

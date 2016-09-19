@@ -1,0 +1,99 @@
+.pb-lamp {
+  position: relative;
+  width: 1226px;
+  margin: 0 auto;
+  z-index: 20;
+  .pb-lamp-stage {
+    position: relative;
+    width: 100%;
+    -webkit-perspective: 742px;
+    perspective: 742px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    .pb-lamp-animation {
+      transform: translateZ(-1500px) rotateY(0deg) rotateZ(0deg);
+      transform-style: preserve-3d;
+      animation: imgAnimation 10s linear infinite;
+      .pb-lamp-img {
+        position: absolute;
+        left: 50%;
+        width: 115px;
+        -webkit-transition: -webkit-transform 1s;
+        transition: transform 1s;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        > div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 115px;
+          height: 1533px;
+          overflow: hidden;
+          -webkit-transform-origin: 50% 50% 0px;
+          transform-origin: 50% 50% 0px;
+          -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+          background-image: url(../images/img-lamp.jpg);
+          background-repeat: no-repeat;
+          opacity: .8;
+        }
+      }
+    }
+  }
+  .pb-lamp-light {
+    position: absolute;
+    left: 49.9%;
+    top: 0;
+    width: 30px;
+    height: 200px;
+    background: #fff;
+    animation: lampLight 3s infinite ease-out;
+    -webkit-animation: lampLight 3s infinite ease-out;
+    opacity: .6;
+    z-index: 18;
+    border-radius: 0 0 30px 30px;
+  }
+  .pb-lamp-light:after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 180px;
+    margin-left: 7px;
+    border-radius: 0 0 15px 15px;
+    background: #000;
+    z-index: 19;
+    opacity: .5;
+  }
+}
+
+$imgCount: 20 !default;
+@for $i from 1 through $imgCount {
+  .pb-lamp-img#{$i} {
+    background-position: ($i * -115px + 115px) 0;
+    transform: rotateY($i * 18deg) translateZ(355px);
+  }
+}
+
+@keyframes imgAnimation {
+  0% {
+    -webkit-transform: translateZ(-1500px) rotateY(0deg) rotateZ(0deg);
+    transform: translateZ(-1500px) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: translateZ(-1500px) rotateY(360deg) rotateZ(0deg);
+    transform: translateZ(-1500px) rotateY(360deg) rotateZ(0deg);
+  }
+}
+
+@-webkit-keyframes lampLight {
+  0% {
+    box-shadow: 0 0 80px #fff;
+  }
+  50% {
+    box-shadow: 0 0 10px #c7f2ff;
+  }
+  100% {
+    box-shadow: 0 0 80px #fff;
+  }
+}

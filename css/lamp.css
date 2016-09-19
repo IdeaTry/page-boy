@@ -1,0 +1,158 @@
+.pb-lamp {
+  position: relative;
+  width: 1226px;
+  margin: 0 auto;
+  z-index: 20; }
+  .pb-lamp .pb-lamp-stage {
+    position: relative;
+    width: 100%;
+    -webkit-perspective: 742px;
+    perspective: 742px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+    .pb-lamp .pb-lamp-stage .pb-lamp-animation {
+      transform: translateZ(-1500px) rotateY(0deg) rotateZ(0deg);
+      transform-style: preserve-3d;
+      animation: imgAnimation 10s linear infinite; }
+      .pb-lamp .pb-lamp-stage .pb-lamp-animation .pb-lamp-img {
+        position: absolute;
+        left: 50%;
+        width: 115px;
+        -webkit-transition: -webkit-transform 1s;
+        transition: transform 1s;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d; }
+        .pb-lamp .pb-lamp-stage .pb-lamp-animation .pb-lamp-img > div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 115px;
+          height: 1533px;
+          overflow: hidden;
+          -webkit-transform-origin: 50% 50% 0px;
+          transform-origin: 50% 50% 0px;
+          -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+          background-image: url(../images/img-lamp.jpg);
+          background-repeat: no-repeat;
+          opacity: .8; }
+  .pb-lamp .pb-lamp-light {
+    position: absolute;
+    left: 49.9%;
+    top: 0;
+    width: 30px;
+    height: 200px;
+    background: #fff;
+    animation: lampLight 3s infinite ease-out;
+    -webkit-animation: lampLight 3s infinite ease-out;
+    opacity: .6;
+    z-index: 18;
+    border-radius: 0 0 30px 30px; }
+  .pb-lamp .pb-lamp-light:after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 180px;
+    margin-left: 7px;
+    border-radius: 0 0 15px 15px;
+    background: #000;
+    z-index: 19;
+    opacity: .5; }
+
+.pb-lamp-img1 {
+  background-position: 0px 0;
+  transform: rotateY(18deg) translateZ(355px); }
+
+.pb-lamp-img2 {
+  background-position: -115px 0;
+  transform: rotateY(36deg) translateZ(355px); }
+
+.pb-lamp-img3 {
+  background-position: -230px 0;
+  transform: rotateY(54deg) translateZ(355px); }
+
+.pb-lamp-img4 {
+  background-position: -345px 0;
+  transform: rotateY(72deg) translateZ(355px); }
+
+.pb-lamp-img5 {
+  background-position: -460px 0;
+  transform: rotateY(90deg) translateZ(355px); }
+
+.pb-lamp-img6 {
+  background-position: -575px 0;
+  transform: rotateY(108deg) translateZ(355px); }
+
+.pb-lamp-img7 {
+  background-position: -690px 0;
+  transform: rotateY(126deg) translateZ(355px); }
+
+.pb-lamp-img8 {
+  background-position: -805px 0;
+  transform: rotateY(144deg) translateZ(355px); }
+
+.pb-lamp-img9 {
+  background-position: -920px 0;
+  transform: rotateY(162deg) translateZ(355px); }
+
+.pb-lamp-img10 {
+  background-position: -1035px 0;
+  transform: rotateY(180deg) translateZ(355px); }
+
+.pb-lamp-img11 {
+  background-position: -1150px 0;
+  transform: rotateY(198deg) translateZ(355px); }
+
+.pb-lamp-img12 {
+  background-position: -1265px 0;
+  transform: rotateY(216deg) translateZ(355px); }
+
+.pb-lamp-img13 {
+  background-position: -1380px 0;
+  transform: rotateY(234deg) translateZ(355px); }
+
+.pb-lamp-img14 {
+  background-position: -1495px 0;
+  transform: rotateY(252deg) translateZ(355px); }
+
+.pb-lamp-img15 {
+  background-position: -1610px 0;
+  transform: rotateY(270deg) translateZ(355px); }
+
+.pb-lamp-img16 {
+  background-position: -1725px 0;
+  transform: rotateY(288deg) translateZ(355px); }
+
+.pb-lamp-img17 {
+  background-position: -1840px 0;
+  transform: rotateY(306deg) translateZ(355px); }
+
+.pb-lamp-img18 {
+  background-position: -1955px 0;
+  transform: rotateY(324deg) translateZ(355px); }
+
+.pb-lamp-img19 {
+  background-position: -2070px 0;
+  transform: rotateY(342deg) translateZ(355px); }
+
+.pb-lamp-img20 {
+  background-position: -2185px 0;
+  transform: rotateY(360deg) translateZ(355px); }
+
+@keyframes imgAnimation {
+  0% {
+    -webkit-transform: translateZ(-1500px) rotateY(0deg) rotateZ(0deg);
+    transform: translateZ(-1500px) rotateY(0deg) rotateZ(0deg); }
+  100% {
+    -webkit-transform: translateZ(-1500px) rotateY(360deg) rotateZ(0deg);
+    transform: translateZ(-1500px) rotateY(360deg) rotateZ(0deg); } }
+@-webkit-keyframes lampLight {
+  0% {
+    box-shadow: 0 0 80px #fff; }
+  50% {
+    box-shadow: 0 0 10px #c7f2ff; }
+  100% {
+    box-shadow: 0 0 80px #fff; } }
+
+/*# sourceMappingURL=lamp.css.map */
