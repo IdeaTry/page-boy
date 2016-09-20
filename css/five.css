@@ -1,0 +1,21 @@
+.pb-five {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap; }
+  .pb-five::after {
+    content: '';
+    flex-grow: 999999999; }
+  .pb-five > div {
+    position: relative;
+    margin: 2px;
+    background-color: #333; }
+    .pb-five > div i {
+      display: block; }
+    .pb-five > div img {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      vertical-align: bottom; }
+
+/*# sourceMappingURL=five.css.map */

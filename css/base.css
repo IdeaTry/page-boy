@@ -258,3 +258,24 @@ header, nav, article, section, aside, footer, figure, figcaption {
 .pb-container {
   position: relative;
 }
+
+/* footer s */
+.footer {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(199, 242, 255, .2);
+  z-index: 20;
+}
+
+.footer li {
+  padding: 5px 0;
+}
+
+.footer li a {
+  color: #3fa1e6;
+}
+.footer li a:hover {
+  text-decoration: underline;
+}

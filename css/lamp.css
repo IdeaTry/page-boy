@@ -1,6 +1,7 @@
 .pb-lamp {
   position: relative;
   width: 1226px;
+  height: 600px;
   margin: 0 auto;
   z-index: 20; }
   .pb-lamp .pb-lamp-stage {
@@ -40,25 +41,16 @@
     position: absolute;
     left: 49.9%;
     top: 0;
-    width: 30px;
+    width: 20px;
     height: 200px;
-    background: #fff;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: rgba(255, 255, 255, 0.8);
     animation: lampLight 3s infinite ease-out;
     -webkit-animation: lampLight 3s infinite ease-out;
     opacity: .6;
     z-index: 18;
     border-radius: 0 0 30px 30px; }
-  .pb-lamp .pb-lamp-light:after {
-    content: '';
-    position: relative;
-    display: block;
-    width: 16px;
-    height: 180px;
-    margin-left: 7px;
-    border-radius: 0 0 15px 15px;
-    background: #000;
-    z-index: 19;
-    opacity: .5; }
 
 .pb-lamp-img1 {
   background-position: 0px 0;

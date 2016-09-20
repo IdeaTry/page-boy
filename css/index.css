@@ -92,7 +92,6 @@
 /* banner e */
 
 /* contents s */
-
 .pb-contents {
   position: relative;
   z-index: 20;
@@ -101,7 +100,7 @@
 
 .pb-title {
   position: relative;
-  margin: 80px 0 50px;
+  margin: 100px 0 50px;
   border-style: solid;
   border-width: 0 0 1px 0;
   border-color: rgba(63, 161, 230, .3);
@@ -120,8 +119,11 @@
   font-size: 24px;
 }
 
-.pb-contents ul {
-  margin: 0 -15px;
+.pb-contents ul,
+.pb-partner {
+  margin: -50px -65px;
+  padding: 50px;
+  overflow: hidden;
 }
 
 .pb-contents li {
@@ -164,13 +166,31 @@
 }
 
 .pb-contents li a:hover {
-  box-shadow: 0 15px 30px rgba(63, 161, 230, .2);
+  box-shadow: 0 15px 30px rgba(63, 161, 230, .3);
   transform: translate3d(0, -5px, 0);
   -webkit-transform: translate3d(0, -5px, 0);
 }
 
 .pb-contents li a:hover p {
   bottom: 0;
+}
+
+/* partner s */
+.pb-partner li {
+  width: 20%;
+}
+
+.pb-partner li a {
+  padding: 18px 0;
+  border: 1px solid #3fa1e6;
+  text-align: center;
+}
+
+.pb-partner li a:hover {
+  border-color: #c7f2ff;
+  box-shadow: 0 3px 10px rgba(199, 242, 255, .2);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 /* contents e */
