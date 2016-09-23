@@ -52,10 +52,10 @@
 }
 
 .pb-home-icon {
-  display: inline-block;
-  position: relative;
+  display: block;
+  position: absolute;
   left: 45px;
-  bottom: 75px;
+  top: 45px;
   width: 30px;
   height: 30px;
   background: #c7f2ff;
