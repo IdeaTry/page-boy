@@ -39,10 +39,11 @@
           opacity: .8; }
   .pb-lamp .pb-lamp-light {
     position: absolute;
-    left: 49.9%;
+    left: 50%;
     top: 0;
     width: 20px;
     height: 200px;
+    margin-left: -20px;
     border-style: solid;
     border-width: 0 10px 10px 10px;
     border-color: rgba(255, 255, 255, 0.8);

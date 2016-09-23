@@ -3,13 +3,14 @@
   z-index: 20;
   display: flex;
   flex-wrap: wrap;
+  opacity: .75;
   &::after {
     content: '';
     flex-grow: 999999999;
   }
   > div {
     position: relative;
-    margin: 2px;
+    margin: 5px;
     background-color: #333;
     i {
       display: block;

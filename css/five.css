@@ -2,13 +2,14 @@
   position: relative;
   z-index: 20;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  opacity: .75; }
   .pb-five::after {
     content: '';
     flex-grow: 999999999; }
   .pb-five > div {
     position: relative;
-    margin: 2px;
+    margin: 5px;
     background-color: #333; }
     .pb-five > div i {
       display: block; }
