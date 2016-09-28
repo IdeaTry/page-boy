@@ -1,33 +1,33 @@
 $(function() {
-  var s = $('.stars > div'),
-    si = s.size();
+    var s = $('.stars > div'),
+        si = s.size();
 
-  stars();
-  setInterval(stars, 500);
-  setInterval(function() {
-    for (var j = 0; j < si / 5; j++) {
-      s.eq(si - j).remove();
-    }
-  }, 1000)
+    stars();
+    setInterval(stars, 500);
+    setInterval(function() {
+        for (var j = 0; j < si / 5; j++) {
+            s.eq(si - j).remove();
+        }
+    }, 1000)
 });
 
 
 function stars() {
-  for (var i = 0; i < 5; i++) {
-    starNum();
-  }
+    for (var i = 0; i < 5; i++) {
+        starNum();
+    }
 }
 
 function starNum() {
-  var star = $('.stars'), s = $('.stars > div'), o, p, q, n;
+    var star = $('.stars'), s = $('.stars > div'), o, p, q, n;
 
-  o = parseInt(Math.random() * 1600 + 100);
-  p = parseInt(Math.random() * 600 + 900);
-  q = parseInt(Math.random() * 600 + 1500);
-  n = parseInt(Math.random() * 10 + (-10));
-  star.prepend('<div class="star"></div>');
-  star.children('div').eq(0).css({'left': o, 'top': n});
-  star.children('div').eq(0).animate({'left': o - p, 'top': $(window).height() + 100}, q);
+    o = parseInt(Math.random() * 1600 + 100);
+    p = parseInt(Math.random() * 600 + 900);
+    q = parseInt(Math.random() * 600 + 1500);
+    n = parseInt(Math.random() * 10 + (-10));
+    star.prepend('<div class="star"></div>');
+    star.children('div').eq(0).css({'left': o, 'top': n});
+    star.children('div').eq(0).animate({'left': o - p, 'top': $(window).height() + 100}, q);
 }
 
 /*
